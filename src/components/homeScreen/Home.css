@@ -63,4 +63,11 @@
 .home-right img {
     height: 95vh;
     width: auto;
+    cursor: pointer;
+}
+
+.home-right img:hover {
+    transition: 0.6s;
+    transform: scale(1.05);
+    
 }
