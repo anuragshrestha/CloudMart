@@ -9,10 +9,10 @@ const Navbar = () => {
   const [menu, setMenu] = useState("shop");
 
   return (
-    <div className="navbar">
+    <div className="navbar"> 
       <div className="nav-logo">
         <img src={logo} alt="" />
-        <p>SHOP MART</p>
+        <p>FASHION</p>
       </div>
       <ul className="nav-menu">
         <li

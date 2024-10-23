@@ -8,14 +8,14 @@ export const Home = () => {
   return (
     <div className="home">
       <div className="home-left">
-        <h2>New Exciting Products</h2>
+        <h2>Welcome to Fashion</h2>
         <div>
           <div className="home-hand-icon">
-            <p>new</p>
+            <p>better</p>
             <img src={hand_icon} alt="" />
           </div>
-          <p>collections</p>
-          <p>for everyone</p>
+          <p>designs</p>
+          <p>for only you</p>
         </div>
         <div className="home-latest-button">
           <div>Latest Collection</div>

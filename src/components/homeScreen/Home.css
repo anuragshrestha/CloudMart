@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     background: linear-gradient(180deg, #ffe1f4,#e1f6ff  60%);
+    
 
 }
 
@@ -16,9 +17,9 @@
 }
 
 .home-left h2 {
-    color: black;
-    font-size: 26px;
-    font-weight: 600;
+    color: rgb(19, 26, 154);
+    font-size: 32px;
+    font-weight:600;
 }
 
 .home-left p {
@@ -51,4 +52,15 @@
     color: white;
     font-size: 22px;
     font-weight: 600;
+}
+.home-right {
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.home-right img {
+    height: 95vh;
+    width: auto;
 }
