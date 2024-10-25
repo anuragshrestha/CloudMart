@@ -6,6 +6,7 @@ import { NewCollections } from '../components/newCollections/NewCollections'
 import { NewsLetter } from '../components/newsLetter/NewsLetter'
 
 
+
 export const Shop = () => {
   return (
     <div>
