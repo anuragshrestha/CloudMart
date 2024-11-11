@@ -9,9 +9,9 @@ export const NewCollections = () => {
         <h1>New Products</h1>
         <hr/>
         <div className='collections'>
-        {new_collections.map((item, index) => {
+        {new_collections.map((item, i) => {
             return <Item
-            key = {index}
+            key = {i}
             id = {item.id}
             name = {item.name}
             image = {item.image}
@@ -20,7 +20,6 @@ export const NewCollections = () => {
             />
         })}
         </div>
-    
         </div>
   )
 }

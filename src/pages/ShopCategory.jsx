@@ -4,11 +4,11 @@ import { ShopContext } from "../context/ShopContext";
 import dropdown_icon from "../components/assets/dropdown_icon.png";
 import Item from "../components/Item/Item";
 
-export const ShopCategory = (prop) => {
+export const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
   return (
     <div className="shop-category">
-      <img className="shopcategory-banner" src={prop.banner} alt="" />
+      <img className="shopcategory-banner" src={props.banner} alt="" />
 
       <div className="shopcategory-indexSort">
         <div className="shopcategory-sort">
@@ -17,16 +17,16 @@ export const ShopCategory = (prop) => {
       </div>
       <div className="shopCategory-products">
         {all_product.map((item, i) => {
-          if (item.category === prop.category) {
-            return (
-              <Item
+          if (props.category === item.category) {
+            return   <Item
                 key={i}
+                id={item.id}
                 image={item.image}
                 name={item.name}
                 new_price={item.new_price}
                 old_price={item.old_price}
               />
-            );
+            
           } else {
             return null;
           }
