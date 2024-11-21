@@ -120,7 +120,6 @@ app.post('/addproduct', async(req, res) => {
 
 
 // Api endpoint to delete products
-
 app.post('/deleteproduct', async (req, res) => {
     
     await Product.findOneAndDelete({id: req.body.id});
@@ -128,9 +127,17 @@ app.post('/deleteproduct', async (req, res) => {
     res.json({
         success: true,
         name: req.body.name
-    })
-    
-})
+    }) 
+});
+
+// api endpoint to get all products from database
+
+app.get('/allproducts', async(req, res) => {
+
+    let products = await Product.find({});
+    console.log(("all products fetched", products));
+    res.send(products);
+});
 
 app.listen(port, (error) => {
   if (!error) {
