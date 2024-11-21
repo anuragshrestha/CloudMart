@@ -1,7 +1,20 @@
-import React from 'react'
+import { BrowserRouter } from "react-router-dom";
 
-export const App = () => {
+import Navbar from "./components/navbar/Navbar";
+import Admin from "./pages/admin/ Admin";
+
+export const backend_url = 'http://localhost:4000';
+export const currency = '$';
+
+function App() {
   return (
-    <div className='root' >App</div>
-  )
+    <BrowserRouter>
+      <div>
+        <Navbar />
+        <Admin />
+      </div>
+    </BrowserRouter>
+  );
 }
+
+export default App;
