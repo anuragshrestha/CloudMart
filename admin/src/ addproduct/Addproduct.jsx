@@ -15,6 +15,8 @@ const AddProduct = () => {
     old_price: ""
   });
 
+  //testing
+
   const AddProduct = async () => {
 
     let dataObj;
